@@ -11,6 +11,8 @@
 		D0B26ECA2E36316900AA56B8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B26EC92E36316900AA56B8 /* ContentView.swift */; };
 		D0B26ECC2E36316B00AA56B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0B26ECB2E36316B00AA56B8 /* Assets.xcassets */; };
 		D0B26ECF2E36316B00AA56B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0B26ECE2E36316B00AA56B8 /* Preview Assets.xcassets */; };
+		D0B26ED72E3632C700AA56B8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B26ED62E3632C700AA56B8 /* HomeView.swift */; };
+		D0B26EDA2E3633D100AA56B8 /* FoodViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B26ED92E3633D100AA56B8 /* FoodViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		D0B26EC92E36316900AA56B8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D0B26ECB2E36316B00AA56B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0B26ECE2E36316B00AA56B8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D0B26ED62E3632C700AA56B8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D0B26ED92E3633D100AA56B8 /* FoodViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,7 @@
 		D0B26EC62E36316900AA56B8 /* AzykBox */ = {
 			isa = PBXGroup;
 			children = (
+				D0B26ED52E3632B500AA56B8 /* View */,
 				D0B26EC72E36316900AA56B8 /* AzykBoxApp.swift */,
 				D0B26EC92E36316900AA56B8 /* ContentView.swift */,
 				D0B26ECB2E36316B00AA56B8 /* Assets.xcassets */,
@@ -65,6 +70,23 @@
 				D0B26ECE2E36316B00AA56B8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D0B26ED52E3632B500AA56B8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D0B26ED82E3633B600AA56B8 /* Home */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D0B26ED82E3633B600AA56B8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D0B26ED62E3632C700AA56B8 /* HomeView.swift */,
+				D0B26ED92E3633D100AA56B8 /* FoodViewCell.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +159,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0B26EDA2E3633D100AA56B8 /* FoodViewCell.swift in Sources */,
+				D0B26ED72E3632C700AA56B8 /* HomeView.swift in Sources */,
 				D0B26ECA2E36316900AA56B8 /* ContentView.swift in Sources */,
 				D0B26EC82E36316900AA56B8 /* AzykBoxApp.swift in Sources */,
 			);
