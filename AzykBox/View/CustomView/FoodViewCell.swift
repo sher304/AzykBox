@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct FoodViewCell: View {
+    @State private var isFavorited = false
+
+    
     var body: some View {
         VStack {
             ZStack {
@@ -18,15 +21,24 @@ struct FoodViewCell: View {
                     .background(.blue)
                 Rectangle()
                     .foregroundStyle(.black)
-                    .opacity(0.3)
+                    .opacity(0.4)
                 
                 // MARK: Copmonents inside image
                 VStack {
                     // MARK: Icons from top
                     HStack(alignment: .bottom) {
                         Image(systemName: "square.and.arrow.up")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 25, height: 25)
                         Spacer()
-                        Image(systemName: "heart")
+                        Image(systemName: isFavorited ? "heart.fill" : "heart")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 25, height: 25)
+                            .onTapGesture {
+                                self.isFavorited.toggle()
+                            }
                     }
                     Spacer()
                     // MARK: Icon of restaurant and title of the restaurant
@@ -54,6 +66,7 @@ struct FoodViewCell: View {
                     .fontWeight(.bold)
                 Text("Pick up date and time 17:00")
                 Text("18.00 som")
+                    .strikethrough(true, color: .gray)
                     .frame(maxWidth: .infinity, alignment: .trailing)
                     .fontWeight(.light)
                     .foregroundStyle(.gray)
