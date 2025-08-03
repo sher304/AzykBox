@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct ParameterView: View {
+    @Environment(\.dismiss) var dimsiss
+
     var body: some View {
+        NavigationStack {
             ScrollView {
                 LazyVStack(alignment: .leading, spacing: 25) {
                     ForEach(0..<5) { section in
@@ -17,12 +20,13 @@ struct ParameterView: View {
                                 Text("Category \(section)")
                                     .font(.headline)
                                 Spacer()
-                                NavigationLink(
-                                    destination: RestaurantViews()) {
-                                        Text("See All")
-                                            .font(.subheadline)
-                                            .foregroundColor(.blue)
-                                    }
+                                NavigationLink {
+                                    FiltredOption()
+                                } label: {
+                                    Text("See All")
+                                        .font(.subheadline)
+                                        .foregroundColor(.blue)
+                                }
                             }
                             .padding(.horizontal)
                             ScrollView(.horizontal, showsIndicators: false) {
@@ -39,6 +43,7 @@ struct ParameterView: View {
                 }
                 .padding(.vertical)
             }
+        }
     }
 }
 
