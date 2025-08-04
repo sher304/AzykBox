@@ -32,8 +32,12 @@ struct ParameterView: View {
                             ScrollView(.horizontal, showsIndicators: false) {
                                 LazyHStack(spacing: 15) {
                                     ForEach(0..<10) { item in
-                                        FoodViewCell()
-                                            .frame(width: 300)
+                                        NavigationLink {
+                                            RestaurantDetailView()
+                                        } label: {
+                                            FoodViewCell()
+                                                .frame(width: 300)
+                                        }
                                     }
                                 }
                                 .padding(EdgeInsets(top: 10, leading: 15, bottom: 10, trailing: 5))

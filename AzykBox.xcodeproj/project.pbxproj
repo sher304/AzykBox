@@ -19,6 +19,7 @@
 		D0B26EE62E390A8100AA56B8 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B26EE52E390A8100AA56B8 /* FavoriteView.swift */; };
 		D0B26EE92E390CD300AA56B8 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B26EE82E390CD300AA56B8 /* ProfileView.swift */; };
 		D0B26EEE2E4008A000AA56B8 /* FiltredOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B26EED2E4008A000AA56B8 /* FiltredOption.swift */; };
+		D0B26EF02E4151D800AA56B8 /* RestaurantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B26EEF2E4151D800AA56B8 /* RestaurantDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		D0B26EE52E390A8100AA56B8 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
 		D0B26EE82E390CD300AA56B8 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		D0B26EED2E4008A000AA56B8 /* FiltredOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltredOption.swift; sourceTree = "<group>"; };
+		D0B26EEF2E4151D800AA56B8 /* RestaurantDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				D0B26EDE2E37DC4900AA56B8 /* ParameterView */,
 				D0B26EDB2E37DB9800AA56B8 /* CustomView */,
 				D0B26ED82E3633B600AA56B8 /* Home */,
+				D0B26EEF2E4151D800AA56B8 /* RestaurantDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				D0B26EEE2E4008A000AA56B8 /* FiltredOption.swift in Sources */,
 				D0B26ECA2E36316900AA56B8 /* ContentView.swift in Sources */,
 				D0B26EDD2E37DBD100AA56B8 /* HomeView.swift in Sources */,
+				D0B26EF02E4151D800AA56B8 /* RestaurantDetailView.swift in Sources */,
 				D0B26EE02E37DC5500AA56B8 /* ParameterView.swift in Sources */,
 				D0B26EC82E36316900AA56B8 /* AzykBoxApp.swift in Sources */,
 			);

@@ -81,6 +81,7 @@ struct FoodViewCell: View {
                 }
                 .fontWeight(.bold)
             }
+            .foregroundStyle(.black)
             .padding(EdgeInsets(top: 0, leading: 15,
                                 bottom: 15, trailing: 15))
         }
